@@ -7,17 +7,42 @@
         background-color: lightcyan; 
     }
     </style> 
-     
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script> 
+    <script>
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $("p").hide();
+          });
+          $("#show").click(function(){
+            $("p").show();
+          });
+        });
+        </script>
 </head>
 <body>
-    
+    <script>
+        $(document).ready(function() {
+            $("#target1").click(function(){
+                alert("Hi! I use JQuery to write this.");
+            });
+            $("#target2").click(function(){
+                alert("Welcome to my Web.");
+            });
+        });
+       
+    </script>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
     <ol style="color:red;">
         <h2 style="background-color: antiquewhite;">First Paragraph</h2>
     </ol>
     <p>
         Hi,
         <br />
-        My name is <b>Jackson</b>.
+        My name is <b>Jackson</b>.  <button class="btn btn-default target" id="target1">first</button>
     </p>
     <br />
     <hr />
@@ -25,14 +50,14 @@
     <ol style="color:darkorange;">
         <h2 style="background-color: antiquewhite;">Second Paragraph</h2>
     </ol>
-    <p>This is my first Web.</p>
+    <p>This is my first Web.    <button class="btn btn-default target" id="target2">second</button></p>
     <br />
     <hr />
     <br />
     <ol style="color:yellow;">
         <h2 style="background-color: antiquewhite;">Third Paragraph</h2>
     </ol>
-    <p>Link to Google</p>
+    <p>Link to Google  </p>
     <a href="https://google.com"><li>Google</li></a>
     <br />
     <hr />
@@ -40,7 +65,7 @@
     <ol style="color:lawngreen;">
         <h2 style="background-color: antiquewhite;">Forth Paragraph</h2>
     </ol>
-    <p>Link to Youtube</p>
+    <p>Link to Youtube  </p>
     <a href="https://youtube.com"><li>Youtube</li></a>
     <br />
     <hr />
@@ -48,7 +73,7 @@
     <ol style="color:blue;">
         <h2 style="background-color:antiquewhite;">Fifth Paragraph</h2>
     </ol>
-    <p>Link to Iphone 14</p>
+    <p>Link to Iphone 14   </p>
     <a href="i14.png"><li>I14</li></a>
     <br />
     <img src="iphone14.jpg" width="400" />
