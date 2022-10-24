@@ -32,7 +32,16 @@
                 alert("Welcome to my Web.");
             });
         });
-       
+    </script>
+    <script>
+        $("document").ready(function(){
+            $("#img1").mouseenter(function(){
+                $("#img1").css('width','400px');
+            });
+            $("#img1").mouseleave(function(){
+                $("#img1").css('width','300px');
+            });
+        });
     </script>
     <button id="hide">Hide</button>
     <button id="show">Show</button>
@@ -78,6 +87,14 @@
     <br />
     <img src="iphone14.jpg" width="400" />
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Jw1qp3W_GZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br/>
+    <hr/>
+    <br/>
+    <h2 style="background-color:navajowhite;">JQuery</h2>
+    <img src="JQuery.png" alt="javascript" id="img1" width="300px">
+    <br/>
+    <hr/>
+    <br/>
     <h1 style="background-color:navajowhite;">Welcome</h1>
     <input type="text" placeholder="account" />
     <br />
@@ -92,7 +109,5 @@
     <br />
     <hr />
     <br/>
-    
-
 </body>
 </html>
